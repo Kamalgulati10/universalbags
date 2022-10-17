@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section style="background-color: #eee;">
+        <div class="text-center container py-5">
+          <h4 class="mt-4 mb-5"><strong>Bestsellers</strong></h4>
+      
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                  data-mdb-ripple-color="light">
+                  <img src="https://m.media-amazon.com/images/I/81IdQu4o-QL._SL1500_.jpg"
+                   style="width:15rem" />
+                  <a href="#!">
+                    <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                        <h5><span class="badge bg-primary ms-2">New</span></h5>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">$61.99</h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                  data-mdb-ripple-color="light">
+                  <img src="https://www.fshoppers.com/wp-content/uploads/2020/09/91ArJudYdDL._SL1500_.jpg"
+                  style="width:11.4rem" />
+                  <a href="#!">
+                    <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                        <h5><span class="badge bg-success ms-2">Eco</span></h5>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">$61.99 </h6>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                  <img src="data:image/jpeg;base64,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"
+                  style="width:13rem" />
+                  <a href="#!">
+                    <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                        <h5><span class="badge bg-danger ms-2">-10%</span></h5>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr48_wCAOFExls54n_L1DPXB7Ar2kW3PMXgA&usqp=CAU"
+                  style="width:11.4rem" />
+                  <a href="#!">
+                    <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                        <h5>
+                          <span class="badge bg-success ms-2">Eco</span><span
+                            class="badge bg-danger ms-2">-10%</span>
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIczuQYORG_Oa2-pES1GgKtmluLnGJbfaJCw&usqp=CAU"
+                    style="width:8rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+           
+      
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9vI6mSqcouIZ2x4c11IGPkkrE_l02JMykA&usqp=CAU"
+                  style="width:13.8rem" />
+                  <a href="#!">
+                    <div class="mask">
+                      <div class="d-flex justify-content-start align-items-end h-100">
+                        <h5>
+                          <span class="badge bg-primary ms-2">New</span><span
+                            class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <a href="" class="text-reset">
+                    <h5 class="card-title mb-3">Product name</h5>
+                  </a>
+                  <a href="" class="text-reset">
+                    <p>Category</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Y4HweOhNokydI3IFlXl3w0mYVqc5tGiu8A&usqp=CAU"
+                    style="width:11.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBvFr9dDLIFTcpP8mNAbXsyrynJ42_XcB8XA&usqp=CAU"
+                    style="width:13.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUNyWBk_nT5XF7LnRa_CEq184T6YNh4ysYFQ&usqp=CAU"
+                    style="width:16.7rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV0zk3TtRzekbosuJy-w8-c4AMJU8rBtUwxw&usqp=CAU"
+                    style="width:14.4rem"/>
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvw45L45j4kkxe_2oealvMSe1U4yppW2PR3w&usqp=CAU"
+                    style="width:14.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8VN-W1A7DiOnZGCVe6ZVoxJxuTfmBsrXJ-w&usqp=CAU"
+                    style="width:17.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4HXXeT3VGyyOjqYMLSa041pQB8meDJWmKtA&usqp=CAU"
+                    style="width:12.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCcxUGGDyR7F68T5HsHMpQzMRWhCmlSvVyJA&usqp=CAU"
+                    style="width:11.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXV27TJCK_Zxlv9gEW4rOR68GjWNVjoRCMQ&usqp=CAU"
+                    style="width:12.4rem" />
+                    <a href="#!">
+                      <div class="mask">
+                        <div class="d-flex justify-content-start align-items-end h-100">
+                          <h5>
+                            <span class="badge bg-primary ms-2">New</span><span
+                              class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <a href="" class="text-reset">
+                      <h5 class="card-title mb-3">Product name</h5>
+                    </a>
+                    <a href="" class="text-reset">
+                      <p>Category</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+      </section>
+</body>
+</html>
